@@ -1,16 +1,142 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+    "title": "Why Aqua Enterprises",
+    "style": {
+      "background-color": "#007bff",
+      "color": "white",
+      "text-align": "center",
+      "padding": "20px 0"
     },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Expertise & Experience",
+        "content": "With years of industry experience, we combine deep expertise and innovative thinking to solve your toughest challenges, delivering reliable solutions that drive success."
+
+,
+        "style": {
+          "background-color": "#fff",
+          "padding": "30px",
+          "border-radius": "8px"
+        },
+        "icon": "developer.jpg"
+      },
+      {
+        "id": "innovative-solutions",
+        "title": "2. Innovative Solutions",
+        "content": "Innovation is at the heart of everything we do. We strive to provide cutting-edge solutions that not only meet but exceed our clients' expectations. Whether it’s new technology, unique strategies, or tailored approaches, Aqua Enterprises takes pride in offering fresh perspectives and forward-thinking methods.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "graphs.jpg"
+      },
+      {
+        "id": "customer-focused",
+        "title": "3. Customer-Focused Approach",
+        "content": "We believe that strong relationships are the key to success. Our customer-first mindset ensures that we listen closely to your needs and provide solutions that are perfectly aligned with your goals. At Aqua Enterprises, we see each project as an opportunity to forge a lasting partnership built on trust and commitment.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "customer-focused.jpg"
+      },
+      {
+        "id": "quality-reliability",
+        "title": "4. Quality & Reliability",
+        "content": "With Aqua Enterprises, you can be sure that you're getting quality you can rely on. We are committed to delivering only the best products/services, backed by strict quality controls and thorough testing processes. Our reliability ensures that every project is delivered on time and meets our high standards, every time.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "quality.jpg"
+      },
+      {
+        "id": "competitive-advantage",
+        "title": "5. Competitive Advantage",
+        "content": "Aqua Enterprises sets itself apart with a combination of unmatched expertise, personalized services, and a relentless commitment to excellence. Our unique position in the market allows us to deliver exceptional results tailored to your specific needs, at a price point that offers exceptional value.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "advantage.jpg"
+      },
+      {
+        "id": "social-responsibility",
+        "title": "6. Social Responsibility & Impact",
+        "content": "At Aqua Enterprises, we believe in making a positive impact beyond just business. Whether it’s through sustainable practices, community involvement, or corporate social responsibility initiatives, we are dedicated to contributing to the greater good.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "social-responsibility.jpg"
+      },
+      {
+        "id": "client-centric-approach",
+        "title": "7. Client-Centric Approach",
+        "content": "Our approach focuses entirely on understanding and addressing our clients' needs. We prioritize their goals and ensure that every project is executed with attention to detail, delivering solutions that are perfectly aligned with their expectations.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "client-centric.jpg"
+      },
+      {
+        "id": "technology-innovation",
+        "title": "8. Technology & Innovation",
+        "content": "We are always at the forefront of adopting new technologies that can elevate our clients' experiences. Whether it’s integrating AI, automation, or blockchain, we are committed to driving technological advancements that bring real value to the table.",
+        "style": {
+          "background-color": "white",
+          "padding": "30px",
+          "margin-bottom": "20px",
+          "border-radius": "8px",
+          "box-shadow": "0 4px 6px rgba(0,0,0,0.1)"
+        },
+        "icon": "innovation.jpg"
+      },
+      {
+        "id": "cta",
+        "content": {
+          "text": "Ready to take the next step?",
+          "button": {
+            "text": "Contact Us",
+            "link": "/contact"
+          }
+        },
+        "style": {
+          "text-align": "center",
+          "padding": "20px",
+          "background-color": "#f9f9f9",
+          "margin-top": "30px",
+          "border-radius": "8px"
+        }
+      }
+    ],
+    "footer": {
+      "content": "&copy; 2024 Aqua Enterprises. All rights reserved.",
+      "style": {
+        "text-align": "center",
+        "padding": "20px",
+        "background-color": "#007bff",
+        "color": "white"
+      }
     }
-  ]
-}
+  }
+  

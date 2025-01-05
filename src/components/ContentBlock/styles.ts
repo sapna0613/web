@@ -60,3 +60,18 @@ export const ButtonWrapper = styled("div")`
     margin-left: 20px;
   }
 `;
+
+export const ImageWrapper = styled("div")`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 20px; /* Optional: Adjust spacing between image and text */
+  
+  img {
+    width: 100%;
+    max-width: 500px; /* Adjust based on desired size */
+    height: auto;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  }
+`;

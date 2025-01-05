@@ -1,0 +1,19 @@
+.teaserWrapper {
+    position: relative;
+    width: 150%;
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('developer.tsx');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .teaserContent {
+    position: absolute;
+    top:150%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  

@@ -1,0 +1,253 @@
+Overall Page Styles
+.industrial-supply-page {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  /* Top Banner Section Styles */
+  .header-section {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  .header-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-fact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White text color */
+    background-color: #f6f6f7; /* Blue background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    font-weight: bold;
+  }
+
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 3); /* Adjust for 3 items per slide */
+    padding: 5px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* IndustrialGoodAndMaterialSupply.css */
+  .image-carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .carousel-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+  }
+  
+  .image-carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .carousel-image {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 150px; /* fixed width */
+    height: 150px; /* fixed height */
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  
+ /* Styles for Carousel Container */
+/* Styles for Carousel Container */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33.33%;  /* Sets the width of each image container to 33.33% (3 images per slide) */
+    padding: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* If you want 4 images per slide, change flex: 0 0 33.33% to flex: 0 0 25% in the .carousel-item class */
+  /* .carousel-item {
+    flex: 0 0 25%;  --> This will fit 4 images per slide
+  } */
+  
+  
+  @keyframes slide-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+   */
+  
+  
+  
+  .header-fact h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .aqua-logo {
+    position: center;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* Adjust size of the logo */
+    height: auto;
+  }
+  
+  .aqua-logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Page Header */
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Material Supply Section */
+  .material-supply-section {
+    margin-bottom: 50px;
+  }
+  
+  .material-supply-section img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .material-supply-text {
+    text-align: center;
+    color: #555;
+  }
+  
+  .material-supply-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .material-supply-section p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Image Gallery in Sections */
+  .row-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .row-container .col {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  
+  @media (max-width: 768px) {
+    .row-container .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .contact-section button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .contact-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  

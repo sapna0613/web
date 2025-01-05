@@ -1,20 +1,22 @@
-import { useState } from "react";
-import { Row, Col, Drawer } from "antd";
-import { withTranslation, TFunction } from "react-i18next";
-import Container from "../../common/Container";
-import { SvgIcon } from "../../common/SvgIcon";
-import { Button } from "../../common/Button";
+import { DownOutlined } from '@ant-design/icons';
+import { useState } from 'react';
+import { Row, Col, Drawer, Menu, Dropdown, MenuProps } from 'antd';
+import { withTranslation, TFunction } from 'react-i18next';
+import { Link, useHistory } from 'react-router-dom';
+import Container from '../../common/Container';
+import { SvgIcon } from '../../common/SvgIcon';
+import { Button } from '../../common/Button';
+
 import {
   HeaderSection,
   LogoContainer,
   Burger,
   NotHidden,
-  Menu,
   CustomNavLinkSmall,
   Label,
   Outline,
   Span,
-} from "./styles";
+} from './styles';
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
@@ -23,31 +25,64 @@ const Header = ({ t }: { t: TFunction }) => {
     setVisibility(!visible);
   };
 
+  // Dropdown menu items for Products
+  const productsMenuItems: MenuProps['items'] = [
+    {
+      key: '1',
+      label: <Link to="/fabrication">{t('Fabrication')}</Link>,
+    },
+    {
+      key: '2',
+      label: <Link to="/industrialGoodAndMaterialSupply">{t('industrialGoodAndMaterialSupply')}</Link>,
+    },
+    {
+      key: '3',
+      label: <Link to="/valveAndPump">{t('ValveAndPump')}</Link>,
+    },
+  ];
+
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
-        behavior: "smooth",
+        behavior: 'smooth',
       });
       setVisibility(false);
     };
+
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+        {/* Home Tab */}
+        <CustomNavLinkSmall>
+          <Link to="/home">{t('Home')}</Link>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+
+        {/* About Tab */}
+        <CustomNavLinkSmall>
+          <Link to="/about">{t('About')}</Link>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+
+        {/* Services Tab */}
+        <CustomNavLinkSmall>
+          <Link to="/services">{t('Services')}</Link>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+
+        {/* Products Tab with Dropdown */}
+        <Dropdown
+          overlay={<Menu items={productsMenuItems} />}
+          trigger={['hover', 'click']}
         >
+          <CustomNavLinkSmall>
+            <Link to="/products">
+              {t('Products')} <DownOutlined />
+            </Link>
+          </CustomNavLinkSmall>
+        </Dropdown>
+
+        {/* Contact Button */}
+        <CustomNavLinkSmall style={{ width: '180px' }} onClick={() => scrollTo('contact')}>
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t('Contact')}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
@@ -57,9 +92,9 @@ const Header = ({ t }: { t: TFunction }) => {
   return (
     <HeaderSection>
       <Container>
-        <Row justify="space-between">
+        <Row justify="space-between" align="middle">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <SvgIcon src="logo.jpeg" width="101px" height="64px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -69,11 +104,9 @@ const Header = ({ t }: { t: TFunction }) => {
           </Burger>
         </Row>
         <Drawer closable={false} open={visible} onClose={toggleButton}>
-          <Col style={{ marginBottom: "2.5rem" }}>
+          <Col style={{ marginBottom: '2.5rem' }}>
             <Label onClick={toggleButton}>
-              <Col span={12}>
-                <Menu>Menu</Menu>
-              </Col>
+              <Col span={12}>Menu</Col>
               <Col span={12}>
                 <Outline />
               </Col>

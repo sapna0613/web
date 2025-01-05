@@ -1,0 +1,39 @@
+/* Center the image container and position text on top */
+.image-container {
+    position: relative; /* Establish a relative positioning context */
+    width: 100%; /* Take full width of the parent */
+    max-width: 800px; /* Optional: Limit maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .image-container img {
+    display: block; /* Remove unwanted spacing below image */
+    width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  /* Overlay content on top of the image */
+  .overlay-content {
+    position: absolute; /* Position content over the image */
+    top: 50%; /* Move text to the vertical center */
+    left: 50%; /* Move text to the horizontal center */
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 20px; /* Add space inside the text container */
+    border-radius: 8px; /* Optional: Rounded corners for text box */
+  }
+  
+  .overlay-content h1 {
+    font-size: 2rem; /* Adjust title size */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .overlay-content p {
+    font-size: 1rem; /* Adjust description size */
+    margin: 10px 0 0; /* Add spacing below the title */
+  }
+  
