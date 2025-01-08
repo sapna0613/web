@@ -8,7 +8,7 @@
 .header-image {
     position: relative;
     height: 500px;
-    background-image: url("/Users/macbookpro/Desktop/f/landy-react-template/public/img/svg/fabimage.jpg"); /* Correct background image path */
+    background-image: url(""); /* Correct background image path */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
